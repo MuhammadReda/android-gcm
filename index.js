@@ -1,7 +1,6 @@
 var https = require('https');
 var util = require('util');
 var events = require('events');
-var querystring = require('querystring');
 
 
 var apiKey = 'AIzaSyDDB-EmUH_OWjPJru9Fgro52puf6k6C-eg';
