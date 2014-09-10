@@ -1,12 +1,21 @@
 {
-  "name": "node-gcm",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Muhammad Reda <say.hello@mreda.net> (http://mreda.net/)",
-  "license": "ISC",
-  "dependencies": {}
+    "name": "android-gcm",
+    "version": "0.0.0",
+    "description": "",
+    "main": "./lib/android-gcm.js",
+    "author": "Muhammad Reda <say.hello@mreda.net> (http://mreda.net/)",
+    "keywords": [
+        "gcm",
+        "android",
+        "android gcm",
+        "android client",
+        "google",
+        "push notification",
+        "push"
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "engines": {
+        "node": ">=0.10.0"
+    }
 }
