@@ -5,12 +5,12 @@ A simple interface for Google Cloud Messaging (GCM) in Node.js
 
 ## Installation
 ```bash
-npm install android-gcm
+$ npm install android-gcm
 ```
 
 ## Usage
 
-Simplest Usage
+#### Simplest Usage
 ```js
 var gcm = require('android-gcm');
 
@@ -30,3 +30,36 @@ var message = new gcm.Message({
 gcmObject.send(message, function(err, response) {});
 
 ```
+
+#### Message Class
+```js
+// You can initialized the message as an empty object and alter it later.
+var message = new gcm.Message();
+
+// add new value to data object (as key-value)
+message.addNew_Data('key3', 'key 3');
+
+// OR add new value(s) to data object
+message.addNew_DataObject({
+    key3: 'key 3',
+    key4: 'key 4'
+});
+
+// add new registration_id (device token)
+message.addNew_RegistrationId('a');
+message.addNew_RegistrationId('b');
+
+// OR add many registration ids at once
+message.addNew_RegistrationIdArray(['a', 'b', 'c']);
+
+// other message options
+message.collapse_key = 'urgent_news';
+message.delay_while_idle = false; // The message should not be sent immediately if the device is idle.
+message.time_to_live = 11; // How long (in seconds) the message should be kept on GCM storage if the device is offline.
+message.dry_run = false; // If true, test the request without actually sending a message
+```
+For full list of message options, check payload table [here](http://developer.android.com/google/gcm/server.html).
+
+
+#### Debugging Requests to GCM Server
+To debug requests made to GCM server, set `DEBUG=https`.
