@@ -63,3 +63,10 @@ For full list of message options, check payload table [here](http://developer.an
 
 #### Debugging Requests to GCM Server
 To debug requests made to GCM server, set `DEBUG=https`.
+
+
+## Bugs, Issues and Feature Requests
+[Here](https://github.com/MuhammadReda/android-gcm/issues)
+
+## License
+[MIT](http://opensource.org/licenses/MIT)
