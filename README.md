@@ -15,7 +15,7 @@ $ npm install android-gcm
 var gcm = require('android-gcm');
 
 // initialize new androidGcm object
-var gcmObject = new gcm.androidGcm('API_KEY');
+var gcmObject = new gcm.AndroidGcm('API_KEY');
 
 // create new message
 var message = new gcm.Message({
