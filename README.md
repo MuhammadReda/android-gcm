@@ -33,7 +33,7 @@ gcmObject.send(message, function(err, response) {});
 
 #### Message Class
 ```js
-// You can initialized the message as an empty object and alter it later.
+// You can initialize the message object as an empty object and alter it later.
 var message = new gcm.Message();
 
 // add new value to data object (as key-value)
