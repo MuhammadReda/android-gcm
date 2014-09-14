@@ -1,6 +1,6 @@
 {
   "name": "android-gcm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "./lib/android-gcm.js",
   "author": "Muhammad Reda <say.hello@mreda.net> (http://mreda.net/)",
